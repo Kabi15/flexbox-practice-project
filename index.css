@@ -1,0 +1,55 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --box_size: 20vw;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    transform: translateY(5rem);
+}
+
+#flexable_container {
+    width: var(--box_size);
+    height: var(--box_size);
+    margin: auto;
+    background-color: dodgerblue;
+    transform: translateY(7.5rem);
+    border-radius: 20px;
+}
+
+#plus_container {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.25rem;
+    background-color: white;
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: rotate_plus 1s ease-in-out 0s 2 alternate;
+}
+
+@keyframes rotate_plus {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(180deg);
+    }
+}
+
+#plus_container p {
+    position: relative;
+    top: 0.05rem;
+}
+

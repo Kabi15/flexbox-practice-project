@@ -1,0 +1,47 @@
+*{
+    margin: 20px;
+    padding: 50px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8d9899;
+}
+
+h1{
+    position:relative;
+    text-align: center;
+    font-size: 2em;
+}
+.flex-container{
+    display: flex;
+    width: 200px;
+    margin: auto;
+    padding: 0px;
+    border-radius: 50px;
+    transform: translateX(0%) translateY(0%);
+    background-color: rgb(180, 193, 206);
+
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+@media screen and (max-width: 700px) {
+    .flex-container, .row, .navbar {
+        flex-direction: column;
+    }
+
+    }
+
+
+li{
+    list-style: none;
+    align-items: left;
+    justify-items: left;
+    margin: 5px;
+    padding:0;
+}
+
+
